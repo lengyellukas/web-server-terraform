@@ -3,24 +3,11 @@
 
 ### Introduction
 
-For this project, you will write a Packer template and a Terraform template to deploy a customizable, scalable web server in Azure.
-
-### Getting Started
-
-1. Clone this repository
-2. Create your infrastructure as code
-3. Update this README to reflect how someone would use your code.
-
-### Dependencies
-
-1. Create an [Azure Account](https://portal.azure.com)
-2. Install the [Azure command line interface](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-3. Install [Packer](https://www.packer.io/downloads)
-4. Install [Terraform](https://www.terraform.io/downloads.html)  
+This project has a Packer template and a Terraform template to deploy a customizable, scalable web server in Azure.
 
 ### Instructions
 
-1. Server image is created by Packer. The packer template is a file with filename server.json. Change following keys based on your Azure subscription: client_id, client_secret, tenant_id and subscription_id. You can choose a custom name for the image by changing the value of the key managed_image_name.
+1. Server image is created by Packer. The packer template is a file with filename server.json.
 2. Login to your Azure Login using Azure CLI by providing your credentials (in new browser window that opens automatically) after running command
 	```
 	az login
@@ -41,7 +28,6 @@ For this project, you will write a Packer template and a Terraform template to d
 	```
 	terraform destroy
 	```
-
 
 ### Output
 
